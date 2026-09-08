@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: collaborative-canvas-server
+    env: node
+    region: oregon
+    buildCommand: cd server && npm install && npm run build
+    startCommand: cd server && npm start
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: CLIENT_ORIGIN
+        value: https://collaborative-canvas-flam.vercel.app
+    healthCheckPath: /health
