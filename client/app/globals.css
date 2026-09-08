@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --canvas-bg: #1a1a2e;
+    --toolbar-bg: #16213e;
+    --panel-bg: #0f3460;
+    --accent: #e94560;
+    --text-primary: #eaeaea;
+    --text-muted: #8a8a9a;
+    --border: rgba(255, 255, 255, 0.08);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--canvas-bg);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      sans-serif;
+  }
+
+  #__next {
+    height: 100%;
+  }
+}
+
+/* Cursor override on canvas */
+.canvas-brush {
+  cursor: crosshair;
+}
+.canvas-eraser {
+  cursor:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Crect x='3' y='3' width='18' height='18' rx='2' fill='none' stroke='white' stroke-width='2'/%3E%3C/svg%3E")
+      12 12,
+    cell;
+}
+
+/* Smooth toolbar icon transitions */
+.tool-btn {
+  @apply flex items-center justify-center rounded-lg transition-all duration-150 select-none;
+}
+.tool-btn:hover {
+  @apply bg-white/10;
+}
+.tool-btn.active {
+  @apply bg-white/20 ring-1 ring-white/30;
+}
+
+/* Thin scrollbar for user list */
+.user-list {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
