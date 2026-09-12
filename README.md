@@ -2,12 +2,11 @@
 
 A real-time collaborative drawing application where multiple users can draw simultaneously on a shared canvas. Built as a technical R&D assignment for FLAM AI.
 
-## Live Demo
+## Repository & Live Demo
 
-> **Frontend:** https://collaborative-canvas-flam.vercel.app  
-> **Backend:** https://collaborative-canvas-server.onrender.com
-
-_Links will be updated after deployment._
+- **GitHub Repository:** https://github.com/Abijith1808/collaborative-canvas
+- **Frontend Demo:** https://collaborative-canvas-flam.vercel.app  
+- **Backend API:** https://collaborative-canvas-server.onrender.com
 
 ---
 
