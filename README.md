@@ -6,7 +6,7 @@ A real-time collaborative drawing application where multiple users can draw simu
 
 - **GitHub Repository:** https://github.com/Abijith1808/collaborative-canvas
 - **Frontend Demo:** https://collaborative-canvas-flam.vercel.app  
-- **Backend API:** https://collaborative-canvas-server.onrender.com
+- **Backend API:** https://collaborative-canvas-1-pyzq.onrender.com
 
 ---
 
